@@ -27,8 +27,6 @@
         android:layout_margin="16dp"
         />
 
-
-
     <!-- Insert Text view with your name in the TextView below -->
 
     <TextView
