@@ -7,12 +7,37 @@
     tools:context="io.github.rudat.childedugame.MainActivity">
 
     <TextView
+        android:id="@+id/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Project Team:"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_marginTop="32dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        android:layout_margin="16dp"
+        />
+
+
+
+    <!-- Insert Text view with your name in the TextView below -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aleksey Ozimkov"
+        app:layout_constraintTop_toBottomOf="@id/hr"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_marginTop="16dp"        />
 
 </android.support.constraint.ConstraintLayout>
